@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!--Nanvar-->
+    <div class="navbar bg-[#1d3557]">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow " 
+          >
+            <li><a >Anasayfa</a></li>
+            
+            <li>
+              <a href="/public/gezilecek_yerler.html">Gezilecek Yerler</a>
+            </li>
+            <li>
+              <a>İlçeler</a>
+              <ul class="p-2">
+                <li><a href="/public/ilceler/sogut.html">Söğüt</a></li>
+                <li><a href="/public/ilceler/bozuyuk.html">Bozüyük</a></li>
+                <li><a href="/public/ilceler/osmaneli.html">Osmaneli</a></li>
+                <li><a href="/public/ilceler/golpazari.html">Gölpazarı</a></li>
+                <li><a href="/public/ilceler/inhisar.html">İnhisar</a></li>
+                <li><a href="/public/ilceler/yenipazar.html">Yenipazar</a></li>
+                <li><a href="/public/ilceler/pazaryeri.html">Pazaryeri</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl">
+          <img src="/src/image/logo.png" class="w-32 h-auto" />
+        </a>
+      </div>
+      <div class="navbar-center hidden lg:flex text-white">
+        <ul class="menu menu-horizontal px-1 text-lg">
+          <li><a href="/public/index.html">Anasayfa</a></li>
+          <li><a href="/public/gezilecek_yerler.html">Gezilecek Yerler</a></li>
+          <li>
+            <details>
+              <summary>İlçeler</summary>
+              <ul class="p-2 bg-[#1d3557] z-10 py-1" >
+                <li><a href="/public/ilceler/sogut.html">Söğüt</a></li>
+                <li><a href="/public/ilceler/bozuyuk.html">Bozüyük</a></li>
+                <li><a href="/public/ilceler/osmaneli.html">Osmaneli</a></li>
+                <li><a href="/public/ilceler/golpazari.html">Gölpazarı</a></li>
+                <li><a href="/public/ilceler/inhisar.html">İnhisar</a></li>
+                <li><a href="/public/ilceler/yenipazar.html">Yenipazar</a></li>
+                <li><a href="/public/ilceler/pazaryeri.html">Pazaryeri</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <div class="form-control">
+          <input
+            type="text"
+            placeholder="Arama"
+            class="input input-bordered w-24 md:w-auto"
+          />
+        </div>
+      </div>
+    </div>
+    <!--Hero1-->
+    <div
+      class="hero min-h-lvh"
+      style="background-image: url(/src/image/ana_bina.jpg)"
+    >
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-neutral-content text-center">
+        <div class="max-w-md">
+          <a href="#"
+            ><img src="/src/image/isimiz_gucumuz.png" alt="isimiz_gucumuz"
+          /></a>
+          <p class="mb-5 text-2xl text-white">
+            Bilecik Belediyesi olarak, Osmanlı İmparatorluğu'nun temellerinin
+            atıldığı bu kadim şehre hoşgeldiniz! Tarih ve kültürün iç içe
+            geçtiği Bilecik, eşsiz doğal güzellikleri, zengin tarihi mirası ve
+            misafirperver halkıyla sizleri ağırlamaktan büyük mutluluk
+            duymaktadır.
+          </p>
+          <a
+            href="/public/gezilecek_yerler.html"
+            class="bg-white text-red-600 py-3 px-4 rounded-lg border-white hover:bg-[#1d3557]"
+          >
+            Gezmeye Başla
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--Hero2-->
+    <div class="hero  min-h-min">
+      <div class="hero-content flex-col lg:flex-row">
+        <!--Carausel-->
+        <div class="carousel rounded-box max-w-72">
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+        </div>
+        <div>
+          <h1 class="text-5xl font-bold">Tarihsel Önemi ve Kökeni</h1>
+          <p class="py-6 text-xl">
+            Bilecik, Türk tarihinin en önemli başlangıç noktalarından biridir. 
+            Osmanlı İmparatorluğu’nun temellerinin atıldığı bu şehir, aynı zamanda 
+            Osman Gazi’nin doğduğu ve Şeyh Edebali’nin türbesinin bulunduğu yer olarak bilinir. 
+            Bu köklü geçmiş, Bilecik’i sadece Türkiye için değil, dünya tarihi için de özel bir konuma taşır.
+            Şehri gezdiğinizde, Osmanlı'nın ilk izlerine, tarihi yapılar ve türbelerde tanıklık edebilirsiniz.
+          </p>
+          <a href="/public/aciklamalar/tarihsel_onem.html" style="text-decoration: underline;">Devamı için tıklayınız</a>
+          
+  
+        </div>
+      </div>
+    </div>
+    <!--Hero3-->
+    <div class="hero  min-h-min">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <!--Carousel-->
+        <div class="carousel rounded-box max-w-72">
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+        </div>
+        <div>
+          <h1 class="text-5xl font-bold">Coğrafi Konum ve Doğal Güzellikler</h1>
+          <p class="py-6 text-xl">
+            Bilecik, Marmara Bölgesi'nin güneydoğusunda yer almakta olup, çevresindeki ormanlar,
+            vadiler ve dağlar ile doğal güzellikleriyle ünlüdür. İnönü Vadisi, Söğüt Ormanları ve 
+            Bilecik Kalesi gibi yerler, şehri ziyaret edenler için eşsiz bir manzara sunar.
+            Şehir, doğa tutkunları ve tarihi keşfetmek isteyenler için mükemmel bir destinasyon olup, 
+            dört mevsim farklı bir güzellik sergiler.
+          </p>
+          <a href="#" style="text-decoration: underline;" >Devamı için tıklayınız</a>
+        </div>
+      </div>
+    </div>
+    <!--Hero4-->
+    <div class="hero  min-h-min">
+      <div class="hero-content  lg:flex">
+        
+        <div class=>
+          <h1 class="text-5xl font-bold">Kültürel Miras ve Yöresel Miras</h1>
+          <p class="py-6 text-xl">
+            Bilecik, zengin bir kültürel mirasa sahiptir. Osmanlı İmparatorluğu'nun ilk yıllarındaki
+             yaşamı yansıtan yapılar ve bu döneme ait geleneksel el sanatları, ziyaretçilere benzersiz
+              bir deneyim sunar.
+              Bilecik mutfağı da oldukça çeşitlidir. Yöresel lezzetler arasında Bilecik çöreği,
+               kısmet böreği ve pek çok tatlı öne çıkar. Ayrıca, geleneksel el sanatları ve el işçilikleri,
+                şehirdeki birçok pazarda ve dükkanlarda satılmaktadır.
+          </p>
+          <a href="#" style="text-decoration: underline;">Devamı için tıklayınız</a>
+        </div>
+      </div>
+    </div>
+    <!--Coursel1-->
+    <div class="mx-auto max-w-7xl">
+      <div class="carousel rounded-box  min-h-min content-center mx-4">
+      <div class="carousel-item ">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
+          alt="Burger" />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
+          alt="Burger" />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
+          alt="Burger" />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp"
+          alt="Burger" />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp"
+          alt="Burger" />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp"
+          alt="Burger" />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
+          alt="Burger" />
+      </div>
+    </div></div>
+    
+    <!--Hero5-->
+    <div class="hero  min-h-min">
+      <div class="hero-content flex-col lg:flex-row">
+        <!--Carousel-->
+        <div class="carousel rounded-box max-w-72">
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+        </div>
+        <div>
+          <h1 class="text-5xl font-bold">Bilecik’in Ekonomik Yapısı ve Gelişimi</h1>
+          <p class="py-6 text-xl">
+            Bilecik, tarihi ve kültürel mirasının yanı sıra hızla gelişen bir sanayi şehridir. Şehir, son yıllarda sanayi ve ticaret 
+            alanlarında önemli bir ivme kazanmıştır. Tarım sektörü de şehrin ekonomisinde önemli bir yer tutmakta olup, özellikle
+             tarım ürünleri ve zeytincilik ön plana çıkar.
+            Bilecik'in büyüyen sanayi altyapısı, şehri hem yerel hem de uluslararası yatırımcılar için cazip bir hale getirmiştir.
+          </p>
+          <a href="#" style="text-decoration: underline;">Devamı için tıklayınız</a>
+        </div>
+      </div>
+    </div>
+    <!--Hero6-->
+    <div class="hero  min-h-min">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <!--Carousel-->
+        <div class="carousel rounded-box max-w-72">
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+          <div class="carousel-item w-full">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
+              class="w-full"
+              alt="Tailwind CSS Carousel component" />
+          </div>
+        </div>
+        <div>
+          <h1 class="text-5xl font-bold">Bilecik’te Yaşam ve İnsanlar</h1>
+          <p class="py-6 text-xl">
+            Bilecik’in halkı misafirperver ve dost canlısıdır. Şehirdeki sosyal yaşam oldukça dinamik olup, her yıl 
+            düzenlenen çeşitlifestivaller ve kültürel etkinliklerle şehir halkı bir araya gelir. Şehir, küçük ve huzurlu 
+            bir yerleşim alanı olmasının yanı sıra, büyüyen altyapı projeleriyle modern bir yaşam sunmaktadır. Şehirdeki 
+            eğitim, sağlık ve sosyal hizmetler, yaşayanlar için yüksek kalitede sunulmaktadır.
+          </p>
+          <a href="#" style="text-decoration: underline;">Devamı için tıklayınız</a>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <footer class="footer  bg-[#1d3557] text-neutral-content p-4 min-h-min ">
+      <aside>
+        <svg
+          width="50"
+          height="50"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          class="fill-current"
+        >
+          <path
+            d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"
+          ></path>
+        </svg>
+        <p>
+          Busra Koyun Ltd.
+          <br />
+          Providing reliable tech since 2024
+        </p>
+      </aside>
+      <nav class="text-lg">
+        <h6 class="footer-title text-lg ">Social</h6>
+        <div class="grid grid-flow-col gap-4 ">
+          <a>
+            <i class="fa-brands fa-twitter "></i>
+          </a>
+          <a>
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a>
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </nav>
+      <nav class="text-lg">
+        <h6 class="footer-title">İletişim</h6>
+        <div class="grid grid-flow-row gap-1">
+          <a href="tel:+905555555555">+90 555 555 55 55</a>
+          <a href="123456789@gmail.com">Mail</a>
+        </div>
+      </nav>
+      <nav class="text-lg">
+        <div class="grid grid-flow-row gap-1">
+          <h6 class="footer-title">Hizmetler</h6>
+          <a href="#">Web Development</a>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
