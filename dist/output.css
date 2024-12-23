@@ -3678,6 +3678,22 @@ details.collapse summary::-webkit-details-marker {
   margin-left: auto;
 }
 
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -3710,6 +3726,18 @@ details.collapse summary::-webkit-details-marker {
   height: auto;
 }
 
+.max-h-64 {
+  max-height: 16rem;
+}
+
+.max-h-52 {
+  max-height: 13rem;
+}
+
+.max-h-72 {
+  max-height: 18rem;
+}
+
 .min-h-min {
   min-height: -moz-min-content;
   min-height: min-content;
@@ -3721,6 +3749,10 @@ details.collapse summary::-webkit-details-marker {
 
 .min-h-lvh {
   min-height: 100lvh;
+}
+
+.min-h-72 {
+  min-height: 18rem;
 }
 
 .w-24 {
@@ -3761,6 +3793,14 @@ details.collapse summary::-webkit-details-marker {
 
 .w-64 {
   width: 16rem;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-1 {
+  width: 0.25rem;
 }
 
 .min-w-fit {
@@ -3837,6 +3877,22 @@ details.collapse summary::-webkit-details-marker {
 
 .max-w-7xl {
   max-width: 80rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.max-w-96 {
+  max-width: 24rem;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-shrink {
@@ -3981,6 +4037,26 @@ details.collapse summary::-webkit-details-marker {
 
 .fill-current {
   fill: currentColor;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.object-none {
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 
 .p-10 {
